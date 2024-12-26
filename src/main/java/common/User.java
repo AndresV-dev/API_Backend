@@ -12,13 +12,16 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "users")
+@Table(name = "user")
 public class User extends PanacheEntityBase {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
-    private String user;
+    private String username;
     private String password;
-    private String role;
+    private String email;
+    private String phone;
+    private Integer age;
+    private String jsonData;
 }
