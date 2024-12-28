@@ -13,6 +13,7 @@ import lombok.Setter;
 @NoArgsConstructor
 @Entity
 @Table(name = "user")
+// ToDo:  Make a description for the swagger Documentation
 public class User extends PanacheEntityBase {
 
     @Id
